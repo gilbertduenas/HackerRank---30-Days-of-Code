@@ -17,5 +17,9 @@ def string_loop(s):
 
     return f'{E} {O}'
 
+# Or I could do this to replace lines 6 to 18.
+#     for i in range(n):
+#         return f'{s[::2]} {s[1::2]}'
+
 for i in range(n):
     print(string_loop(input()))
