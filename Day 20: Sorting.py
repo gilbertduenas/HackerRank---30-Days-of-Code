@@ -5,14 +5,16 @@ import sys
 n = int(raw_input().strip())
 a = map(int, raw_input().strip().split(' '))
 
-def bubble(arr):
-    count_swap = 0
-    for num in range(len(arr)-1, 0, -1):
+def bubble(a):
+    count = 0
+    for num in range(len(a)-1, 0, -1):
         for i in range(num):
-            if arr[i] > arr[i+1]:
-                arr[i], arr[i+1] = arr[i+1], arr[i]
-                count_swap +=1
-    return count_swap
+            if a[i] > a[i+1]:
+                t = a[i]
+                a[i] = a[i+1]
+                a[i+1] = t
+                count +=1
+    return count
 
 print "Array is sorted in {} swaps.".format(bubble(a))
 print "First Element: {}".format(a[0])
