@@ -14,3 +14,6 @@ elif d1[2] == d2[2] and d1[1] == d2[1] and d1[0] > d2[0]:
 
 else:
     print(0)
+
+    
+    
